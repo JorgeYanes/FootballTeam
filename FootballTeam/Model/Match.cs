@@ -8,12 +8,12 @@ namespace FootballTeam.Model
 {
     public class Match
     {
-        public string Competition { get; set; }
-        public int Year { get; set; }
-        public string Round { get; set; }
-        public string Team1 { get; set; }
-        public string Team2 { get; set; }
-        public string Team1Goals { get; set; }
-        public string Team2Goals { get; set; }
+        public string competition { get; set; }
+        public int year { get; set; }
+        public string round { get; set; }
+        public string team1 { get; set; }
+        public string team2 { get; set; }
+        public string team1goals { get; set; }
+        public string team2goals { get; set; }
     }
 }

@@ -11,7 +11,7 @@ namespace TestFootballTeam
     public class TeamServiceTest
     {
         [Fact]
-        public void TestDefaultTeamAndYear()
+        public void TestTotalGoalsDefaultValuesTeamAndYear()
         {
             //Arrange
             TeamService team = new TeamService();
@@ -20,16 +20,16 @@ namespace TestFootballTeam
             int result = team.GetTotalGoals(default, default);
 
             //Assert
-            Assert.Equal(0, result); Assert.Equal(0, result);
+            Assert.Equal(0, result);
         }
 
         [Fact]
-        public void TestBacelona2011()
+        public void TestTotalGoalsBacelona2011()
         {
             //Arrange
             TeamService team = new TeamService();
             //Act
-            int result = team.GetTotalGoals("Bacelona", 2011);
+            int result = team.GetTotalGoals("Barcelona", 2011);
             //Assert
             Assert.Equal(35, result);
         }
